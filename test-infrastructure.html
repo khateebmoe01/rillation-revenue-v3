@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastructure Test</title>
+    <style>
+        body {
+            background: #0d0d0f;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .test-box {
+            background: red;
+            color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border: 3px solid yellow;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #infrastructure {
+            background: blue;
+            color: white;
+            padding: 20px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Infrastructure Test Page</h1>
+    <div class="test-box">
+        IF YOU SEE THIS RED BOX, THE PAGE IS LOADING
+    </div>
+    
+    <div id="infrastructure" style="display: block !important; visibility: visible !important;">
+        <h2>Infrastructure Section</h2>
+        <p>If you see this blue box, the Infrastructure section is visible.</p>
+        <div id="infra-overview" style="display: block !important;">
+            <h3>Overview Tab</h3>
+            <p>This is the overview content.</p>
+        </div>
+    </div>
+    
+    <div class="test-box">
+        IF YOU SEE THIS SECOND RED BOX, THE PAGE IS WORKING
+    </div>
+    
+    <script>
+        console.log('✅ Test page loaded');
+        console.log('Infrastructure element:', document.getElementById('infrastructure'));
+        console.log('Infrastructure display:', window.getComputedStyle(document.getElementById('infrastructure')).display);
+    </script>
+</body>
+</html>
+
