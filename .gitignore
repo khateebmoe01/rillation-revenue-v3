@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+.temp/
+*.tmp
+
+# Supabase local files
+.cli-latest
+.gotrue-version
+.pooler-url
+.postgres-version
+.project-ref
+.rest-version
+.storage-migration
+.storage-version
+
+# Cursor
+.cursor/
+
+# SENSITIVE FILES - DO NOT COMMIT THESE!
+config.js
+.cursor/mcp.json
+.cursor/.cursor/mcp.json
