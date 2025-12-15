@@ -26,3 +26,4 @@ ALTER TABLE funnel_stage_targets ENABLE ROW LEVEL SECURITY;
 -- Create policy to allow all operations (adjust as needed for your security requirements)
 CREATE POLICY "Allow all operations on funnel_stage_targets" ON funnel_stage_targets
     FOR ALL USING (true) WITH CHECK (true);
+
