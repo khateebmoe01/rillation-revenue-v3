@@ -32,3 +32,4 @@ with open('config.js', 'r') as f:
     else:
         print('Could not extract Supabase credentials from config.js')
 
+
